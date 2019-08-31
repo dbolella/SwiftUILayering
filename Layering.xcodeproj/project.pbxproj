@@ -15,6 +15,8 @@
 		0A4F0249231997D60019B636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F0247231997D60019B636 /* LaunchScreen.storyboard */; };
 		0A4F0254231997D60019B636 /* LayeringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F0253231997D60019B636 /* LayeringTests.swift */; };
 		0A4F025F231997D60019B636 /* LayeringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F025E231997D60019B636 /* LayeringUITests.swift */; };
+		0A4F026D231999140019B636 /* SimonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F026C231999140019B636 /* SimonView.swift */; };
+		0A4F026F2319A1890019B636 /* CircleSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F026E2319A1890019B636 /* CircleSelectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0A4F025A231997D60019B636 /* LayeringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayeringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4F025E231997D60019B636 /* LayeringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeringUITests.swift; sourceTree = "<group>"; };
 		0A4F0260231997D60019B636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4F026C231999140019B636 /* SimonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonView.swift; sourceTree = "<group>"; };
+		0A4F026E2319A1890019B636 /* CircleSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSelectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				0A4F0247231997D60019B636 /* LaunchScreen.storyboard */,
 				0A4F024A231997D60019B636 /* Info.plist */,
 				0A4F0244231997D60019B636 /* Preview Content */,
+				0A4F026C231999140019B636 /* SimonView.swift */,
+				0A4F026E2319A1890019B636 /* CircleSelectorView.swift */,
 			);
 			path = Layering;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 			files = (
 				0A4F023D231997D20019B636 /* AppDelegate.swift in Sources */,
 				0A4F023F231997D20019B636 /* SceneDelegate.swift in Sources */,
+				0A4F026D231999140019B636 /* SimonView.swift in Sources */,
+				0A4F026F2319A1890019B636 /* CircleSelectorView.swift in Sources */,
 				0A4F0241231997D20019B636 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
