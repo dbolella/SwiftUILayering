@@ -10,29 +10,33 @@ import SwiftUI
 
 struct CircleSelectorView : View {
     @State var grow = false
+    let colors = [Color.blue, Color.red, Color.green, Color.yellow]
+    
     var body: some View {
         VStack {
             ZStack {
-                Circle()
-                    .trim(from: grow ? 0 : 0.25 , to: 0.25)
-                    .stroke(Color.blue, lineWidth: 30)
-                    .frame(width: 300, height: 300)
-                    .animation(.basic(duration: 0.5, curve: .linear))
-                Circle()
-                    .trim(from: grow ? 0.25 : 0.5 , to: 0.5)
-                    .stroke(Color.red, lineWidth: 30)
-                    .frame(width: 300, height: 300)
-                    .animation(.basic(duration: 0.5, curve: .linear))
-                Circle()
-                    .trim(from: grow ? 0.5 : 0.75 , to: 0.75)
-                    .stroke(Color.green, lineWidth: 30)
-                    .frame(width: 300, height: 300)
-                    .animation(.basic(duration: 0.5, curve: .linear))
-                Circle()
-                    .trim(from: grow ? 0.75 : 1 , to: 1.0)
-                    .stroke(Color.yellow, lineWidth: 30)
-                    .frame(width: 300, height: 300)
-                    .animation(.basic(duration: 0.5, curve: .linear))
+                ForEach(1 ..< 5) { item in
+                    Circle()
+                        .trim(from: self.grow ? (0.25 * (item - 1)) : (0.25 * item) , to: (0.25 * item))
+                        .stroke(colors[item], lineWidth: 30)
+                        .frame(width: 300, height: 300)
+                        .animation(.basic(duration: 0.5, curve: .linear))
+                }
+//                Circle()
+//                    .trim(from: grow ? 0.25 : 0.5 , to: 0.5)
+//                    .stroke(Color.red, lineWidth: 30)
+//                    .frame(width: 300, height: 300)
+//                    .animation(.basic(duration: 0.5, curve: .linear))
+//                Circle()
+//                    .trim(from: grow ? 0.5 : 0.75 , to: 0.75)
+//                    .stroke(Color.green, lineWidth: 30)
+//                    .frame(width: 300, height: 300)
+//                    .animation(.basic(duration: 0.5, curve: .linear))
+//                Circle()
+//                    .trim(from: grow ? 0.75 : 1 , to: 1.0)
+//                    .stroke(Color.yellow, lineWidth: 30)
+//                    .frame(width: 300, height: 300)
+//                    .animation(.basic(duration: 0.5, curve: .linear))
             }
         }
         .rotationEffect(.degrees(self.grow ? 0: 90))

@@ -12,12 +12,9 @@ struct ContentView : View {
     @State var showOverlay = false
     var body: some View {
         VStack {
-//            SimonView()
             Text("Test")
                 .overlay(showOverlay ? CircleSelectorView() : nil)
-                .tapAction {
-                    self.showOverlay.toggle()
-            }
+                .tapAction { self.showOverlay.toggle() }
         }
     }
 }
